@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="28dp"
+    android:background="#F0F4F7">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convertisseur de Devises"
+        android:textSize="30sp"
+        android:textColor="#1A237E"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Devise Source :"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/source_currency_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Devise Source"
+        android:padding="16dp"
+        android:background="@drawable/custom_edit_text"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Devise Cible :"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/target_currency_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Devise Cible"
+        android:padding="16dp"
+        android:background="@drawable/custom_edit_text"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/converted_amount_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conversion ici"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#00796B"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Montant à convertir :"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/amount_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrer le Montant"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:background="@drawable/custom_edit_text"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Montant apres conversion :"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="4dp"/>
+    <TextView
+        android:id="@+id/converted_amount_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#00796B"
+        android:background="@drawable/custom_background"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:backgroundTint="#1A237E"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
